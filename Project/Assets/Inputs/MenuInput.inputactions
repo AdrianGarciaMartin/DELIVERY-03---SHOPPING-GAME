@@ -1,0 +1,54 @@
+{
+    "name": "MenuInput",
+    "maps": [
+        {
+            "name": "UI",
+            "id": "6eb7e2c4-e804-41d1-9c47-41f57b7bf0fa",
+            "actions": [
+                {
+                    "name": "EnterGameplayScene",
+                    "type": "Button",
+                    "id": "2b05a219-7624-4daa-93fb-1e292160e916",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Quit",
+                    "type": "Button",
+                    "id": "9c0650ee-856e-4de6-83b6-62f2f924454d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3b3f3969-a5d0-46c4-bef2-8f4c99afc390",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnterGameplayScene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a3fff6d6-b4a5-4cc4-96e6-18e86138da0b",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Quit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
