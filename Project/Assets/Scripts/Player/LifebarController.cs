@@ -23,6 +23,4 @@ public class LifebarController : MonoBehaviour
         _healthBarAmount = Mathf.Clamp(_healthBarAmount, 0, 100);
         _healthBar.fillAmount = _healthBarAmount / 100f;
     }
-
-    
 }
