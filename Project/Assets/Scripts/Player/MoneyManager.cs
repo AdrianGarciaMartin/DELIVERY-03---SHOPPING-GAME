@@ -20,4 +20,11 @@ public class MoneyManager : MonoBehaviour
 
         _moneyText.text = _moneyAmount.ToString();
     }
+
+    public void EarnMoney(int moneyEarned)
+    {
+        _moneyAmount += moneyEarned;
+
+        _moneyText.text = _moneyAmount.ToString();
+    }
 }
