@@ -8,6 +8,7 @@ public class LifebarController : MonoBehaviour
     public Image _healthBar;
     public float _healthBarAmount = 100.0f;
     public SceneLoader _sceneLoader;
+    public AudioSource _audioSource;
 
     float _damage = 10.0f;
     float _healingAmount = 5.0f;
@@ -19,6 +20,8 @@ public class LifebarController : MonoBehaviour
 
     private void OnMouseDown() 
     {
+        _audioSource.Play();
+
         _healthBarAmount -= _damage;
         _healthBar.fillAmount = _healthBarAmount / 100.0f;
         Debug.Log(_healthBarAmount);
