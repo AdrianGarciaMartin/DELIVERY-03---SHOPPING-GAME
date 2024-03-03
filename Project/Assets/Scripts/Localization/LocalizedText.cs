@@ -7,15 +7,17 @@ using UnityEngine.UI;
 
 public class LocalizedText : MonoBehaviour
 {
-    public string TextKey;
-    private Text _textValue;
+    public string _textKey;
+    private TextMeshProUGUI _textValue;
     //private TMP_Text _textValue;
 
     void Start()
     {
-        _textValue = GetComponent<Text>();
+        _textValue = GetComponent<TextMeshProUGUI>();
         //_textValue = GetComponent<TMP_Text>();
         SetText();
+
+        Debug.Log(_textKey);
     }
 
     private void OnEnable()
@@ -35,6 +37,6 @@ public class LocalizedText : MonoBehaviour
 
     private void SetText()
     {
-        _textValue.text = Localizer.GetText(TextKey);
+        _textValue.text = Localizer.GetText(_textKey);
     }
 }

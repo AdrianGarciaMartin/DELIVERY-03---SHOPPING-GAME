@@ -7,7 +7,7 @@ using UnityEngine;
 public class Inventory : ScriptableObject
 {
     [SerializeField]
-    List<InventorySlot> Slots;
+    public List<InventorySlot> Slots;
 
     public int Length => Slots.Count;
 

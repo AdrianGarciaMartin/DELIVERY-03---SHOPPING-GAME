@@ -18,12 +18,12 @@ public class ItemSelected : MonoBehaviour //detectar el item sobre el que hago c
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(_selected);
+        //Debug.Log(_selected);
 
-        for (int i = 0; i <= _inventory.Length; i++) //out of range exception (maybe en lugar de _inventory.Length mejor poner _inventory.Slots.Length pero para eso hay que hacer que la lista Slots sea publica (no se si afectará en algo al código))
-        {
-            Debug.Log(_inventory.GetSlot(i));
-        }
+        //for (int i = 0; i <= _inventory.Slots.Count; i++) //out of range exception (maybe en lugar de _inventory.Length mejor poner _inventory.Slots.Length pero para eso hay que hacer que la lista Slots sea publica (no se si afectará en algo al código))
+        //{
+        //    Debug.Log(_inventory.GetSlot(i));
+        //}
     }
 
     private void OnMouseDown()
