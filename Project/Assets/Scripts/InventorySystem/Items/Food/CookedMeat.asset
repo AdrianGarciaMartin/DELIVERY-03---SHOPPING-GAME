@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8e81028e8ec0fa4b9857251ef0941ae, type: 3}
-  m_Name: HealthPotion
+  m_Script: {fileID: 11500000, guid: c0c34cf94079f0a47a278725c19972dc, type: 3}
+  m_Name: CookedMeat
   m_EditorClassIdentifier: 
-  Name: Health Potion
-  ImageUI: {fileID: 8507558670831626303, guid: f0dad579ebaa13a4a86b44e1bd88ba8c, type: 3}
-  IsStackable: 0
-  HealthPoints: 5
+  Name: CookedMeat
+  ImageUI: {fileID: 6288798748262579900, guid: f0dad579ebaa13a4a86b44e1bd88ba8c, type: 3}
+  IsStackable: 1
+  _healthPoints: 10
+  _cost: 35
