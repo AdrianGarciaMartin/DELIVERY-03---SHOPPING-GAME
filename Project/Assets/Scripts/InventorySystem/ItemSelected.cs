@@ -9,21 +9,21 @@ public class ItemSelected : MonoBehaviour //detectar el item sobre el que hago c
     public Inventory _inventory; //maybe hay que crear un segundo inventory (el del shop) y revisar ambos
     public bool _selected = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
         //Debug.Log(_selected);
 
-        //for (int i = 0; i <= _inventory.Slots.Count; i++) //out of range exception (maybe en lugar de _inventory.Length mejor poner _inventory.Slots.Length pero para eso hay que hacer que la lista Slots sea publica (no se si afectará en algo al código))
-        //{
-        //    Debug.Log(_inventory.GetSlot(i));
-        //}
+        for (int i = 0; i <= _inventory.Slots.Count - 1; i++) 
+        {
+            //Debug.Log(_inventory.GetSlot(i));
+
+            if (_inventory.GetSlot(i).Item.isSelected && _selected)
+            {
+                _inventory.GetSlot(i).Item.isSelected = false;
+            }
+        }
     }
 
     private void OnMouseDown()

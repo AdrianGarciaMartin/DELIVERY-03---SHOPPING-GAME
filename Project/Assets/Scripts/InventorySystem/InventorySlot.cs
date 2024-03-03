@@ -46,6 +46,8 @@ public class InventorySlot
     {
         return _amount < 1;
     }
+
+    
 }
 
 
