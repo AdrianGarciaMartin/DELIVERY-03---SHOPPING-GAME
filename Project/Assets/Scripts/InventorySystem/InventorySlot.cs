@@ -48,7 +48,10 @@ public class InventorySlot
         return _amount < 1;
     }
 
-    
+    public void Destroy()
+    {
+        GameObject.Destroy(_item);
+    }
 }
 
 

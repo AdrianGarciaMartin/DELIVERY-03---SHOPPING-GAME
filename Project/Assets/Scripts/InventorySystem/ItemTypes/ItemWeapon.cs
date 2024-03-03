@@ -7,5 +7,4 @@ using UnityEngine;
 public class ItemWeapon : ItemBasic
 {
     public int _cost = 50;
-
 }
